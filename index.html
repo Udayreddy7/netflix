@@ -3,24 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Netflix</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #141414;
+        color: white;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #141414;
+      }
+      .navbar img {
+        width: 120px;
+      }
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar ul li {
+        margin-left: 20px;
+      }
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      .hero {
+        height: 70vh;
+        background: url("https://assets.nflxext.com/ffe/siteui/vlv3/10000ef1-20b5-4143-9176-0372c8990e3e/01718612-b2d4-4f43-94b3-c6716487d2ff/GB-en-20230703-popsignuptwoweeks-perspective_alpha_website_large.jpg")
+          no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+      .hero h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+      .hero p {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .hero button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #e50914;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+      .hero button:hover {
+        background-color: #b20710;
+      }
+      .content-section {
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .content-section h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+      .content-section img {
+        width: 100%;
+        max-width: 800px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Netflix</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vel at
-      vero autem, nesciunt quisquam corporis quibusdam quod exercitationem in
-      nobis porro! Aliquid itaque et officia. Asperiores nostrum tempora
-    </p>
-    <h2>movies</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
-      dolor obcaecati rem possimus porro impedit aut harum? Ipsam tempore
-      veritatis, esse facere ipsa iusto nisi, ipsum magnam facilis aperiam
-      voluptas.
-    </p>
-    <h3>series</h3>
-    <p>web series for students</p>
+    <header class="navbar">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+        alt="Netflix Logo"
+      />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">New & Popular</a></li>
+      </ul>
+    </header>
+
+    <section class="hero">
+      <h1>Unlimited movies, TV shows, and more.</h1>
+      <p>Watch anywhere. Cancel anytime.</p>
+      <button>Get Started</button>
+    </section>
+
+    <section class="content-section">
+      <h2>Popular on Netflix</h2>
+      <img
+        src="https://www.whats-on-netflix.com/wp-content/uploads/2021/01/most-popular-netflix-shows-2021-scaled.jpg"
+        alt="Popular on Netflix"
+      />
+    </section>
   </body>
 </html>
